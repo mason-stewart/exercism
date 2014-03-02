@@ -6,7 +6,6 @@ var Bob = function() {
         uppercaseRegex = /[A-Z]+/,
         questionRegex = /\?$/;
 
-
     // First check if it's empty, or is just whitespace
     if (!emptyRegex.test(phrase)) {
       return 'Fine. Be that way!';
