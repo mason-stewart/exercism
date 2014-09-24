@@ -1,8 +1,7 @@
 -module(dna).
 -export([to_rna/1]).
 
-to_rna([H|T]) -> [roll(H) | to_rna(T)];
-to_rna([]) -> [].
+to_rna(L) -> [roll(H) || H <- L].
 
 roll($G) -> $C;
 roll($C) -> $G;
